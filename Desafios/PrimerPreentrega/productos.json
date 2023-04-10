@@ -1,0 +1,132 @@
+[
+	{
+		"id": 1,
+		"title": "producto 1",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": [
+			"img1.jpg"
+		],
+		"stock": 25,
+		"code": "a1",
+		"status": true,
+		"category": "B"
+	},
+	{
+		"id": 2,
+		"title": "producto 2",
+		"description": "Este es un producto de prueba 2",
+		"price": 200,
+		"thumbnail": [
+			"img2.jpg"
+		],
+		"stock": 200,
+		"code": "b2",
+		"status": true,
+		"category": "B"
+	},
+	{
+		"id": 3,
+		"title": "producto 3",
+		"description": "Este es un producto de prueba 3",
+		"price": 300,
+		"thumbnail": [
+			"img3.jpg"
+		],
+		"stock": 200,
+		"code": "c3",
+		"status": true,
+		"category": "B"
+	},
+	{
+		"id": 4,
+		"title": "producto 4",
+		"description": "Este es un producto de prueba 4",
+		"price": 300,
+		"thumbnail": [
+			"img4.jpg"
+		],
+		"stock": 200,
+		"code": "d4",
+		"status": true,
+		"category": "B"
+	},
+	{
+		"id": 5,
+		"title": "producto 5",
+		"description": "Este es un producto de prueba 5",
+		"price": 300,
+		"thumbnail": [
+			"img5.jpg"
+		],
+		"stock": 200,
+		"code": "e5",
+		"status": true,
+		"category": "B"
+	},
+	{
+		"id": 6,
+		"title": "producto 6",
+		"description": "Este es un producto de prueba 6",
+		"price": 300,
+		"thumbnail": [
+			"img6.jpg"
+		],
+		"stock": 200,
+		"code": "f6",
+		"status": true,
+		"category": "B"
+	},
+	{
+		"id": 7,
+		"title": "producto 7",
+		"description": "Este es un producto de prueba 7",
+		"price": 300,
+		"thumbnail": [
+			"img7.jpg"
+		],
+		"stock": 200,
+		"code": "g7",
+		"status": true,
+		"category": "A"
+	},
+	{
+		"id": 8,
+		"title": "producto 8",
+		"description": "Este es un producto de prueba 8",
+		"price": 300,
+		"thumbnail": [
+			"img8.jpg"
+		],
+		"stock": 200,
+		"code": "h8",
+		"status": true,
+		"category": "A"
+	},
+	{
+		"id": 9,
+		"title": "producto 9",
+		"description": "Este es un producto de prueba 9",
+		"price": 300,
+		"thumbnail": [
+			"img9.jpg"
+		],
+		"stock": 200,
+		"code": "i9",
+		"status": true,
+		"category": "A"
+	},
+	{
+		"id": 10,
+		"title": "producto 10",
+		"description": "Este es un producto de prueba 10",
+		"price": 300,
+		"thumbnail": [
+			"img10.jpg"
+		],
+		"stock": 200,
+		"code": "j10",
+		"status": true,
+		"category": "A"
+	}
+]
