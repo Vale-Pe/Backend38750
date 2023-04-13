@@ -1,4 +1,7 @@
 import fs from 'fs'
+import ProductManager from './ProductManager.js'
+
+const productManager = new ProductManager('./productos.json')
 
 let carts = []
 
@@ -55,41 +58,44 @@ class CartManager {
     productExists = async (pid) => {
         try{
             const contenido = await fs.promises.readFile("./productos.json", 'utf-8');
-            //console.log(await fs.promises.readFile("./productos.json", 'utf-8'))
-            let product = JSON.parse(contenido)
-            //console.log(product)
-            let productById = product.find(prod => prod.id === pid)
-            //console.log(productById)
-    
+            let products = JSON.parse(contenido)
+            let productById = products.find(product => product.id === Number(pid))
+
             if(!productById) return 'No existen productos con el siguiente id: ' + pid
+
+            return productById
         }catch(error) {           
             return error
         }
     }
 
-    
     addProductToCart = async (cid, pid) => { 
         try {
-            console.log(await this.productExists(pid))
-            await this.productExists(pid)
+            const productToAdd = await this.productExists(Number(pid))
 
-            await this.getCarts()
-            const cart = await this.getCartById(cid)
-            const index = cart.products.findIndex(product => product.id == pid)
+            let carts = await this.getCarts()
+            let cart = carts.find(cart => cart.id === Number(cid))
 
-            if(index === -1){
-                cart.products.push({
-                    id: pid,
-                    quantity: 1
-                })
-                this.saveCarts()
+            if (!cart) {
+                return "No existen carritos con el siguiente id: " + cid
             } else {
-                cart.products[index] = ({
-                    ...cart.products[index], 
-                    quantity: Number(cart.products[index].quantity) + 1 
-                })
-                this.saveCarts()
+                const index = cart.products.findIndex(product => product.id == Number(pid))
+
+                if(index === -1){
+                    cart.products.push({
+                        id: productToAdd.id,
+                        quantity: 1
+                    })
+                    await this.saveCarts()
+                } else {
+                    cart.products[index] = ({
+                        id: cart.products[index].id, 
+                        quantity: Number(cart.products[index].quantity) + 1 
+                    })
+                    await this.saveCarts()
+                }
             }
+
         } catch (error) {
             return error
         }
@@ -101,7 +107,11 @@ const cart = new CartManager('./carrito.json');
 const fileTest = async() => {
 //     console.log(await cart.getCarts())
 
-//     console.log(await cart.createCart())
+//     console.Vlog(await cart.createCart())
+
+//     await cart.addProductToCart(1,5)
+//     await cart.productExists()
+
 }
 
 

@@ -1,6 +1,3 @@
-//Id:Number/String (A tu elección, de igual manera como con los productos, debes asegurar que nunca se dupliquen los ids y que este se autogenere). products: Array que contendrá objetos que representen cada producto
-
-
 import { Router } from 'express'
 import CartManager from '../Manager/CartManager.js'
 
@@ -35,24 +32,17 @@ router.get('/:cid', async (req, res) => {
     }
 })
 
-router.post('/:cid/product/:pid ', async (req, res)=>{
+router.post('/:cid/product/:pid', async (req, res) => {
     try{
         const { cid } = req.params
         const { pid } = req.params
 
-        await cartManager.addProductToCart(cid, pid)
+        await cartManager.addProductToCart(Number(cid), Number(pid))
+
         res.status(200).send({status: 'succes', payload: carts})
     }catch (error){
         res.status(400).send({status: 'error', message: 'error'})
     }
-
-
-
-
-
-    // await cartManager.addCart()
-
-    // res.status(200).send({carts})
 })
 
 export default router

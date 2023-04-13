@@ -87,9 +87,9 @@ const fileTest = async() => {
     // Prueba para añadir productos -------------------------
 
     await product.addProduct({
-        title: 'producto 1', 
-        description: 'Este es un producto de prueba', 
-        price: 200, 
+        title: 'VIAJE SUBMARINO', 
+        description: '¡CUIDADO! Este libro es diferente a los demás.\t Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grandes peligros y una mala decisión podría acabar en desastre... Pero no desesperes. En cualquier momento puedes retroceder y elegir otra opción, alterar el curso de tu historia y cambiar tu destino.\t Esta es tu misión: debes localizar la legendaria ciudad perdida de la Atlántida. Te esperan todo tipo de peligros, pero si lo consigues, todos tus sueños se harán realidad.',
+        price: 2490, 
         thumbnail: ['img1.jpg'], 
         stock: 25, 
         code: 'a1',
@@ -98,9 +98,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 2', 
-        description: 'Este es un producto de prueba 2',          
-        price: 200, 
+        title: 'MÁS ALLÁ DEL ESPACIO', 
+        description: '¡CUIDADO! Este libro es diferente a los demás. En esta serie los protagonistas y sus decisiones marcan el desarrollo de la historia.\t Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grandes peligros y una mala decisión podría acabar en desastre... Pero no desesperes. En cualquier momento puedes retroceder y elegir otra opción, alterar el curso de tu historia y cambiar tu destino.\t Esta es tu misión: siempre has vivido en una nave espacial, pero ha llegado el momento de decidir en que planeta te asentarás. Escoge rápido, porque te esperan peligros galácticos nunca vistos.',
+        price: 2490, 
         thumbnail: ['img2.jpg'], 
         stock: 200,          
         code: 'b2',
@@ -109,9 +109,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 3', 
-        description: 'Este es un producto de prueba 3', 
-        price: 300, 
+        title: 'EL ABOMINABLE HOMBRE DE LAS NIEVES', 
+        description: '¡CUIDADO! Este libro es diferente a los demás. Tú puedes elegir el desarrollo de la historia.\t Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grander peligros y una mala decisión podría acabar en desastre... Pero no desesperes. en cualquier momento puedes retroceder y elegri otra opción, alterar el curso de tu historia y cambiar tu destino.\t Esta es tu misión: debes encontrar a tu amigo Carlos, desaparecido en el Himalaya en busca del abominale hombre de las nieves. Tormentas de nieve,', 
+        price: 2490, 
         thumbnail: ['img3.jpg'], 
         stock: 200, 
         code: 'c3',
@@ -120,9 +120,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 4', 
-        description: 'Este es un producto de prueba 4', 
-        price: 300, 
+        title: 'LAS JOYAS PERDIDAS DE NABOOTI', 
+        description: '¡CUIDADO! Este libro es diferente a los demás. Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grandes peligros y una mala decisión podría acabar en desastre... Pero no desesperes. En cualquier momento puedes retroceder y elegir otra opción, alterar el curso de tu historia y cambiar tu destino. Esta es tu misión: las legendarias joyas de Nabooti han sido robadas y debes unirte a tus primos Peter y Lucy para recuperarlas. Pero deberás estar muy alerta porque hay otros que tambien las buscan y las joyas albergan un peligroso poder sobrenatural.', 
+        price: 2490, 
         thumbnail: ['img4.jpg'], 
         stock: 200, 
         code: 'd4',
@@ -131,9 +131,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 5', 
-        description: 'Este es un producto de prueba 5', 
-        price: 300, 
+        title: 'EL MISTERIO DE LOS MAYAS', 
+        description: '¡CUIDADO! Este libro es diferente a los demás. En esta serie los protagonistas y sus decisiones marcan el desarrollo de la historia.\t Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grandes peligros y una mala decisión podría acabar en desastre... Pero no desesperes. En cualquier momento puedes retroceder y elegir otra opción, alterar el curso de tu historia y cambiar tu destino.Esta es tu misión: debes encontrar a tu amigo Tom, desaparecido en Mexico. Para ello, \t tendrás que explorar los misterios de la civilización maya, pero recuerda, una mala decisión pude poner fin a tus aventuras...', 
+        price: 2490, 
         thumbnail: ['img5.jpg'], 
         stock: 200, 
         code: 'e5',
@@ -142,9 +142,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 6', 
-        description: 'Este es un producto de prueba 6', 
-        price: 300, 
+        title: 'LA CASA DEL PELIGRO', 
+        description: '¡CUIDADO! Este libro es diferente a los demás. Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grandes peligros y una mala decisión podría acabar en desastre... Pero no desesperes. En cualquier momento puedes retroceder y elegir otra opción, alterar el curso de tu historia y cambiar tu destino.\t Esta es tu misión: debes investigar una misteriosa casa que esconde peligros inimaginales, fantasmas, extraterrestres e incluso viajes en el tiempo. Será un caso que nunca olvidarás...¡si sobrevives!', 
+        price: 2490, 
         thumbnail: ['img6.jpg'], 
         stock: 200, 
         code: 'f6',
@@ -153,9 +153,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 7', 
-        description: 'Este es un producto de prueba 7', 
-        price: 300, 
+        title: 'PRISIONERO DE LAS HORMIGAS', 
+        description: '¡CUIDADO! Este libro es diferente a los demás. Tú puedes elegir tu propia aventura.\t Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grandes peligros y una mala decisión podría acabar en desastre... Pero no desesperes. En cualquier momento puedes retroceder y elegir otra opción, alterar el curso de tu historia y cambiar tu destino.\t Esta es tu misión: deberás combatir los planes del Señor del Poder Maligno e infiltrarte entre sus hormigas guerreras. Gracias a tu láser miniaturizador podrás hacerlo, pero te esperan incontables peligros...', 
+        price: 2490, 
         thumbnail: ['img7.jpg'], 
         stock: 200, 
         code: 'g7',
@@ -164,9 +164,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 8', 
-        description: 'Este es un producto de prueba 8', 
-        price: 300, 
+        title: 'EL SECRETO DE LOS NINJA', 
+        description: '¡CUIDADO! Este libro es diferente a los demás. Tú eliges el desarrollo de la historia.\t Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grandes peligros y una mala decisión podría acabar en desastre... Pero no desesperes. En cualquier momento puedes retroceder y elegir otra opción, alterar el curso de tu historia y cambiar tu destino.\t Esta es tu misión: viajarás al pasado para investigar una misteriosa espada samurái que ha aparecido en el dojo de tu amiga Nada. ¿Conseguirás aprender los secretos de las habilidades ninja antes de que los peligros del Japón feudal acaben contigo?.', 
+        price: 2490, 
         thumbnail: ['img8.jpg'], 
         stock: 200, 
         code: 'h8',
@@ -175,9 +175,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 9', 
-        description: 'Este es un producto de prueba 9', 
-        price: 300, 
+        title: 'TERROR EN EL TITANIC', 
+        description: '¡El protagonista eres tú! Esta es tu misión: es el año 1912 y viajas en el Titanic, el famoso transatlántico que se hundió tras chocar con un iceberg. Si no quieres que este viaje acabe tambien en las heladas aguas del Atlántico norte, deberás tener mucho cuidado y hacer uso de todo tu ingenio.', 
+        price: 2490, 
         thumbnail: ['img9.jpg'], 
         stock: 200, 
         code: 'i9',
@@ -186,9 +186,9 @@ const fileTest = async() => {
     })
 
     await product.addProduct({
-        title: 'producto 10', 
-        description: 'Este es un producto de prueba 10', 
-        price: 300, 
+        title: 'LA LEYENDA DE LOS DRAGONES', 
+        description: '¡El protagonista eres tú! Esta es tu misión: vives en la antigua China, tu aldea ha sido atacada por guerreros mongoles y te han capturado. Debes decidir entre huir para salvar a tu familia o permanecer con ellos en busca de una vida mejor. ¿Cuál será tu decisión?', 
+        price: 2490, 
         thumbnail: ['img10.jpg'], 
         stock: 200, 
         code: 'j10',
@@ -201,14 +201,16 @@ const fileTest = async() => {
 
     // Prueba para actualizar productos -------------------------
 
-    // console.log(await product.updateProduct(1, {
-    //     title: 'producto modificado', 
-    //     description: 'Este es un producto de prueba', 
-    //     price: 200, 
-    //     thumbnail: 'sin imagen', 
-    //     stock: 200, 
-    //     code: 'a1'
-    // }))
+// console.log(await product.updateProduct(1, {
+//     title: 'VIAJE SUBMARINO', 
+//     description: '¡CUIDADO! Este libro es diferente a los demás.\t Lo que ocurra en esta historia está SOLO en tus manos. Tendrás que sortear grandes peligros y una mala decisión podría acabar en desastre... Pero no desesperes. En cualquier momento puedes retroceder y elegir otra opción, alterar el curso de tu historia y cambiar tu destino.\t Esta es tu misión: debes localizar la legendaria ciudad perdida de la Atlántida. Te esperan todo tipo de peligros, pero si lo consigues, todos tus sueños se harán realidad.',
+//     price: 2490, 
+//     thumbnail: ['https://imagessl6.casadellibro.com/a/l/t7/66/9788427299566.jpg', 'https://imagessl2.casadellibro.com/a/l/adic/mc/t7/66/9788427299566-2.jpg'], 
+//     stock: 25, 
+//     code: 'a1',
+//     status: (true),
+//     category: "B"
+// }))
 
 
     // Prueba para eliminar productos -------------------------
