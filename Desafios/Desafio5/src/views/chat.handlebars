@@ -1,0 +1,17 @@
+<div>
+    <h1>Chat</h1>
+    <hr>
+    <div>
+        <input placeholder="Mensaje" type="text" id="text" class="w-full bg-gray-50 border border-gray-700 text-gray-900 text-sm rounded-lg focus:ring-gray-400 focus:border-gray-400 p-2.5 focus:outline-none">
+    </div>
+    <div>
+        <ul id="messageLogs">
+
+        </ul>
+    </div>
+        
+</div>
+{{!-- configuración del socket con cdn --}}
+<script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js "></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/cliente.js"></script>
