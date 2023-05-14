@@ -1,9 +1,11 @@
 import { Router } from 'express'
-//import ProductManager from '../dao/filesystem/ProductManager.js'
-import productManager from '../dao/mongo/product.mongo.js'
+
+import ProductManager from '../dao/filesystem/ProductManager.js'
+
 
 const router = Router()
-//const productManager = new ProductManager('./productos.json')
+
+const productManager = new ProductManager('./productos.json')
 
 let products = await productManager.getProducts()
 //console.log(products)
@@ -16,6 +18,8 @@ router.get('/', (req, res)=>{
         style: 'style.css'
     }
 
+    //console.log(products)
+    //console.log(testProduct.products[1].title)
     res.render('home', testProduct)
 })
 

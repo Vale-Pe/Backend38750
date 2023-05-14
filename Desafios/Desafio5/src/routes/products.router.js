@@ -1,11 +1,16 @@
 import { Router } from 'express'
+import objectConfig from '../config/objetConfig.js'
+
 //import ProductManager from '../dao/filesystem/ProductManager.js'
 import productManager from '../dao/mongo/product.mongo.js'
 
 const router = Router()
+objectConfig.connectDB()
 //const productManager = new ProductManager('./productos.json')
 
 let products = await productManager.getProducts()
+
+//console.log(products)
 
 
 router.get('/', async (req, res)=>{
